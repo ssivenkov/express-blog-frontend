@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useSelector } from "react-redux";
 import { isAuthSelector } from "../../redux/slices/auth";
 import { useNavigate, Navigate, useParams } from "react-router-dom";
@@ -23,7 +23,6 @@ export const AddPost = () => {
   const [imageUrl, setImageUrl] = useState('');
 
   const isEditing = Boolean(id);
-  const SERVER_PORT = process.env.REACT_APP_SERVER_PORT;
 
   const handleChangeFile = async (event) => {
     try {

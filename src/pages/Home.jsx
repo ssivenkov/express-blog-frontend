@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import {useDispatch, useSelector} from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Grid from '@mui/material/Grid';
@@ -8,7 +8,6 @@ import { Post } from '../components';
 import { TagsBlock } from '../components';
 import { CommentsBlock } from '../components';
 import { fetchPosts, fetchTags } from "../redux/slices/posts";
-import {isAuthSelector} from "../redux/slices/auth";
 
 export const Home = () => {
   const dispatch = useDispatch();

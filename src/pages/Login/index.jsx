@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
@@ -12,7 +12,6 @@ import {fetchAuth, isAuthSelector} from "../../redux/slices/auth";
 
 export const Login = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
 
   const isAuth = useSelector(isAuthSelector);
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Provider } from 'react-redux';
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from "./App";
 import CssBaseline from "@mui/material/CssBaseline";
 
